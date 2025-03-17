@@ -30,6 +30,7 @@
   "api.expose": "Expose",
   "api.props": "Props",
   "api.slots": "Slots",
+  "api.values": "Values",
   "api.viewSource": "View source",
   "z": "Z"
 }

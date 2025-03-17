@@ -1,6 +1,6 @@
 {
   "name": "YiiEditor",
-  "description": "YiitapEditor 是一个功能齐全的基于块的 Vue 编辑器。",
+  "description": "YiiEditor 是一个功能齐全的基于块的 Vue 编辑器。",
   "tags": {},
   "exportName": "default",
   "displayName": "YiiEditor",
@@ -43,6 +43,7 @@
     },
     {
       "name": "locale",
+      "description": "设置编辑器的语言环境",
       "type": {
         "name": "string"
       },
@@ -53,6 +54,7 @@
     },
     {
       "name": "darkMode",
+      "description": "默认情况下，Yiitap 处于亮色模式，你可以将其设置为暗黑模式。",
       "type": {
         "name": "boolean"
       },
@@ -63,6 +65,7 @@
     },
     {
       "name": "showMainMenu",
+      "description": "是否显示主菜单。",
       "type": {
         "name": "boolean"
       },
@@ -73,6 +76,7 @@
     },
     {
       "name": "showBubbleMenu",
+      "description": "是否显示气泡菜单。",
       "type": {
         "name": "boolean"
       },
@@ -83,6 +87,7 @@
     },
     {
       "name": "showFloatingMenu",
+      "description": "是否显示浮动菜单。",
       "type": {
         "name": "boolean"
       },
@@ -93,6 +98,7 @@
     },
     {
       "name": "showSideMenu",
+      "description": "是否显示侧边菜单。",
       "type": {
         "name": "boolean"
       },
@@ -103,123 +109,84 @@
     },
     {
       "name": "showSideNode",
+      "description": "是否显示侧边节点。",
       "type": {
         "name": "boolean"
       },
       "defaultValue": {
         "func": false,
         "value": "false"
-      }
-    },
-    {
-      "name": "showContent",
-      "type": {
-        "name": "boolean"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "true"
-      }
-    },
-    {
-      "name": "showGuide",
-      "type": {
-        "name": "boolean"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "false"
-      }
-    },
-    {
-      "name": "scrollable",
-      "type": {
-        "name": "boolean"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "false"
-      }
-    },
-    {
-      "name": "editorProps",
-      "type": {
-        "name": "object"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "{}"
       }
     },
     {
       "name": "extensions",
+      "description": "配置你想要启用的扩展列表。\n\n默认情况下，Yiitap 启用\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/extensions/index.ts\" target=\"_blank\">内置扩展</a>。",
       "type": {
         "name": "Array as () => string[]"
       },
       "defaultValue": {
         "func": true,
-        "value": "function () {\n  return []\n}"
+        "value": "() => []"
       }
     },
     {
       "name": "mainMenu",
+      "description": "配置你想要在主菜单中启用的菜单项列表。\n\n默认情况下，Yiitap 使用\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">默认菜单</a>。",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "tableMenu",
+      "description": "配置你想要在表格菜单中启用的菜单项列表。\n\n默认情况下，Yiitap 使用\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">表格菜单</a>。",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "bubbleMenu",
+      "description": "配置你想要在气泡菜单中启用的菜单项列表。\n\n默认情况下，Yiitap 使用\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">默认气泡菜单</a>。",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "floatingMenu",
+      "description": "配置你想要在浮动菜单中启用的菜单项列表。\n\n默认情况下，Yiitap 使用\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">默认浮动菜单</a>。",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "pageView",
+      "description": "设置编辑器的页面视图。",
       "type": {
         "name": "string"
       },
       "defaultValue": {
         "func": false,
         "value": "'page'"
-      }
-    },
-    {
-      "name": "options",
-      "type": {
-        "name": "object"
       },
-      "defaultValue": {
-        "func": false,
-        "value": "{}"
-      }
+      "values": [
+        "page",
+        "full"
+      ]
     }
   ],
   "events": [
@@ -230,7 +197,7 @@
           "{ editor: Editor, transaction: Object }"
         ]
       },
-      "description": "当内容发生事务操作时触发。"
+      "description": "内容事务发生时触发"
     },
     {
       "name": "update",
@@ -239,7 +206,7 @@
           "{ json: Object, html: string }"
         ]
       },
-      "description": "当内容更新时触发。"
+      "description": "内容更新时触发"
     }
   ],
   "slots": [
@@ -253,6 +220,6 @@
     }
   ],
   "sourceFiles": [
-    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/YiiEditor.vue"
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/YiiEditor.vue"
   ]
 }

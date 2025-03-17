@@ -43,6 +43,7 @@
     },
     {
       "name": "locale",
+      "description": "Set the locale of the editor",
       "type": {
         "name": "string"
       },
@@ -53,6 +54,7 @@
     },
     {
       "name": "darkMode",
+      "description": "By default, Yiitap is in light mode, you can set it to dark mode.",
       "type": {
         "name": "boolean"
       },
@@ -63,6 +65,7 @@
     },
     {
       "name": "showMainMenu",
+      "description": "Show main menu or not.",
       "type": {
         "name": "boolean"
       },
@@ -73,6 +76,7 @@
     },
     {
       "name": "showBubbleMenu",
+      "description": "Show bubble menu or not.",
       "type": {
         "name": "boolean"
       },
@@ -83,6 +87,7 @@
     },
     {
       "name": "showFloatingMenu",
+      "description": "Show floating menu or not.",
       "type": {
         "name": "boolean"
       },
@@ -93,6 +98,7 @@
     },
     {
       "name": "showSideMenu",
+      "description": "Show side menu or not.",
       "type": {
         "name": "boolean"
       },
@@ -103,123 +109,84 @@
     },
     {
       "name": "showSideNode",
+      "description": "Show side node or not.",
       "type": {
         "name": "boolean"
       },
       "defaultValue": {
         "func": false,
         "value": "false"
-      }
-    },
-    {
-      "name": "showContent",
-      "type": {
-        "name": "boolean"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "true"
-      }
-    },
-    {
-      "name": "showGuide",
-      "type": {
-        "name": "boolean"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "false"
-      }
-    },
-    {
-      "name": "scrollable",
-      "type": {
-        "name": "boolean"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "false"
-      }
-    },
-    {
-      "name": "editorProps",
-      "type": {
-        "name": "object"
-      },
-      "defaultValue": {
-        "func": false,
-        "value": "{}"
       }
     },
     {
       "name": "extensions",
+      "description": "Configure the list of extensions you want to enable.\n\nBy default, Yiitap enables\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/extensions/index.ts\" target=\"_blank\">BuiltinExtensions</a>.",
       "type": {
         "name": "Array as () => string[]"
       },
       "defaultValue": {
         "func": true,
-        "value": "function () {\n  return []\n}"
+        "value": "() => []"
       }
     },
     {
       "name": "mainMenu",
+      "description": "Configure the list of menu items you want to enable in main menu.\n\nBy default, Yiitap uses\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">DefaultMenu</a>.",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "tableMenu",
+      "description": "Configure the list of menu items you want to enable in table menu.\n\nBy default, Yiitap uses\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">TableMenu</a>.",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "bubbleMenu",
+      "description": "Configure the list of menu items you want to enable in bubble menu.\n\nBy default, Yiitap uses\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">DefaultBubble</a>.",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "floatingMenu",
+      "description": "Configure the list of menu items you want to enable in floating menu.\n\nBy default, Yiitap uses\n<a href=\"https://github.com/yiitap/yiitap/blob/main/packages/vue/src/constants/menu.ts\" target=\"_blank\">DefaultFloating</a>.",
       "type": {
-        "name": "array"
+        "name": "Array as () => string[]"
       },
       "defaultValue": {
-        "func": false,
-        "value": "[]"
+        "func": true,
+        "value": "() => []"
       }
     },
     {
       "name": "pageView",
+      "description": "Set the page view of the editor.",
       "type": {
         "name": "string"
       },
       "defaultValue": {
         "func": false,
         "value": "'page'"
-      }
-    },
-    {
-      "name": "options",
-      "type": {
-        "name": "object"
       },
-      "defaultValue": {
-        "func": false,
-        "value": "{}"
-      }
+      "values": [
+        "page",
+        "full"
+      ]
     }
   ],
   "events": [

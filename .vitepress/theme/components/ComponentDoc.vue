@@ -52,19 +52,25 @@ onMounted(async () => {
       </div>
       <PluginTabs>
         <PluginTabsTab :label="t('props')" v-if="meta?.props">
-          <div v-for="(prop, index) in meta.props" :key="index" class="item">
+          <div v-for="(item, index) in meta.props" :key="index" class="item">
             <div class="item-main">
               <div>
-                <code>{{ prop.name }}</code>:
-                <span class="text-tips">{{ prop.type?.name || '—' }}</span>
+                <code>{{ item.name }}</code>:
+                <span class="text-tips">{{ item.type?.name || '—' }}</span>
               </div>
               <div class="default-value">
-                <code>{{ prop.defaultValue?.value || '—' }}</code>
+                <code>{{ item.defaultValue?.value || '—' }}</code>
               </div>
             </div>
-            <div class="description text-tips" v-if="prop.description">
+            <div class="description text-tips" v-if="item.description">
               <div class="text-tip">{{ t('description') }}</div>
-              <div class="text-info">{{ prop.description }}</div>
+              <div class="text-info" v-html="item.description" />
+            </div>
+            <div class="description text-tips" v-if="item.values">
+              <div class="text-tip">{{ t('values') }}</div>
+              <div class="text-info">
+                {{ item.values.join(', ') || '—' }}
+              </div>
             </div>
           </div>
         </PluginTabsTab>
@@ -78,7 +84,7 @@ onMounted(async () => {
             </div>
             <div class="description text-tips" v-if="item.description">
               <div class="text-tip">{{ t('description') }}</div>
-              <div class="text-info">{{ item.description }}</div>
+              <div class="text-info" v-html="item.description" />
             </div>
           </div>
         </PluginTabsTab>
@@ -91,7 +97,7 @@ onMounted(async () => {
             </div>
             <div class="description text-tips" v-if="item.description">
               <div class="text-tip">{{ t('description') }}</div>
-              <div class="text-info">{{ item.description }}</div>
+              <div class="text-info" v-html="item.description" />
             </div>
           </div>
         </PluginTabsTab>

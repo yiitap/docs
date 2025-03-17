@@ -18,7 +18,7 @@
     "url": "https://github.com/yiitap/docs/issues"
   },
   "dependencies": {
-    "@yiitap/vue": "^1.2.3",
+    "@yiitap/vue": "^1.2.4",
     "vue": "^3.5.13"
   },
   "devDependencies": {

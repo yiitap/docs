@@ -30,6 +30,7 @@
   "api.expose": "暴露属性",
   "api.props": "属性",
   "api.slots": "插槽",
+  "api.values": "值",
   "api.viewSource": "查看源码",
   "z": "Z"
 }

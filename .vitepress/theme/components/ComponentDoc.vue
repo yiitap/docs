@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { tr } from '../../i18n'
+import Loading from './Loading.vue'
 
 const props = defineProps({
   path: {
@@ -15,6 +16,7 @@ const props = defineProps({
 })
 
 const meta = ref<any>(null)
+const loading = ref(false)
 
 const t = (key :string) => {
   return tr(props.locale, `api.${key}`)
@@ -23,15 +25,19 @@ const t = (key :string) => {
 onMounted(async () => {
   const componentDocRoot = props.locale === 'en'
       ? `/data/api`
-      : `/data/api/${props.locale}`;
+      : `/data/api/${props.locale}`
   try {
     const jsonPath = `${componentDocRoot}/${props.path}.json?raw`
+
+    loading.value = true;
     const response = await fetch(jsonPath)
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`)
     }
     meta.value = await response.json()
+    loading.value = false
   } catch (err) {
+    loading.value = false
     console.error('Failed to load API data:', err)
   }
 })
@@ -39,77 +45,80 @@ onMounted(async () => {
 
 <template>
   <section class="component-doc">
-    <div class="name">
-      {{ meta?.description }}
-    </div>
-    <PluginTabs>
-      <PluginTabsTab :label="t('props')" v-if="meta?.props">
-        <div v-for="(prop, index) in meta.props" :key="index" class="item">
-          <div class="item-main">
-            <div>
-              <code>{{ prop.name }}</code>:
-              <span class="text-tips">{{ prop.type?.name || '—' }}</span>
+    <loading v-if="loading" />
+    <template v-else>
+      <div class="name">
+        {{ meta?.description }}
+      </div>
+      <PluginTabs>
+        <PluginTabsTab :label="t('props')" v-if="meta?.props">
+          <div v-for="(prop, index) in meta.props" :key="index" class="item">
+            <div class="item-main">
+              <div>
+                <code>{{ prop.name }}</code>:
+                <span class="text-tips">{{ prop.type?.name || '—' }}</span>
+              </div>
+              <div class="default-value">
+                <code>{{ prop.defaultValue?.value || '—' }}</code>
+              </div>
             </div>
-            <div class="default-value">
-              <code>{{ prop.defaultValue?.value || '—' }}</code>
-            </div>
-          </div>
-          <div class="description text-tips" v-if="prop.description">
-            <div class="text-tip">{{ t('description') }}</div>
-            <div class="text-info">{{ prop.description }}</div>
-          </div>
-        </div>
-      </PluginTabsTab>
-      <PluginTabsTab :label="t('events')" v-if="meta?.events">
-        <div v-for="(item, index) in meta.events" :key="index" class="item">
-          <div class="item-main">
-            <div>
-              <code>{{ item.name }}</code>:
-              <span class="text-tips">({{ item.type?.names.join(',') || '—' }}) => void</span>
+            <div class="description text-tips" v-if="prop.description">
+              <div class="text-tip">{{ t('description') }}</div>
+              <div class="text-info">{{ prop.description }}</div>
             </div>
           </div>
-          <div class="description text-tips" v-if="item.description">
-            <div class="text-tip">{{ t('description') }}</div>
-            <div class="text-info">{{ item.description }}</div>
-          </div>
-        </div>
-      </PluginTabsTab>
-      <PluginTabsTab :label="t('slots')" v-if="meta?.slots">
-        <div v-for="(item, index) in meta.slots" :key="index" class="item">
-          <div class="item-main">
-            <div>
-              <code>{{ item.name }}</code>
+        </PluginTabsTab>
+        <PluginTabsTab :label="t('events')" v-if="meta?.events">
+          <div v-for="(item, index) in meta.events" :key="index" class="item">
+            <div class="item-main">
+              <div>
+                <code>{{ item.name }}</code>:
+                <span class="text-tips">({{ item.type?.names.join(',') || '—' }}) => void</span>
+              </div>
+            </div>
+            <div class="description text-tips" v-if="item.description">
+              <div class="text-tip">{{ t('description') }}</div>
+              <div class="text-info">{{ item.description }}</div>
             </div>
           </div>
-          <div class="description text-tips" v-if="item.description">
-            <div class="text-tip">{{ t('description') }}</div>
-            <div class="text-info">{{ item.description }}</div>
+        </PluginTabsTab>
+        <PluginTabsTab :label="t('slots')" v-if="meta?.slots">
+          <div v-for="(item, index) in meta.slots" :key="index" class="item">
+            <div class="item-main">
+              <div>
+                <code>{{ item.name }}</code>
+              </div>
+            </div>
+            <div class="description text-tips" v-if="item.description">
+              <div class="text-tip">{{ t('description') }}</div>
+              <div class="text-info">{{ item.description }}</div>
+            </div>
           </div>
-        </div>
-      </PluginTabsTab>
-      <PluginTabsTab :label="t('expose')" v-if="meta?.expose">
-        <div v-for="(item, index) in meta.expose" :key="index" class="item">
-          <div class="item-main">
-            <div>
-              <code>{{ item.name }}</code>
-              <template v-if="item.tags?.length">
-                :
-                <span class="text-tips">
+        </PluginTabsTab>
+        <PluginTabsTab :label="t('expose')" v-if="meta?.expose">
+          <div v-for="(item, index) in meta.expose" :key="index" class="item">
+            <div class="item-main">
+              <div>
+                <code>{{ item.name }}</code>
+                <template v-if="item.tags?.length">
+                  :
+                  <span class="text-tips">
                   ({{ item.tags.map((e: any) => e.name).join(',') || '—' }}) => void
                 </span>
-              </template>
+                </template>
+              </div>
+            </div>
+            <div class="description text-tips" v-if="item.description">
+              <div class="text-tip">{{ t('description') }}</div>
+              <div class="text-info" v-html="item.description" />
             </div>
           </div>
-          <div class="description text-tips" v-if="item.description">
-            <div class="text-tip">{{ t('description') }}</div>
-            <div class="text-info" v-html="item.description" />
-          </div>
-        </div>
-      </PluginTabsTab>
-    </PluginTabs>
-    <div class="name">
-      <a :href="meta?.sourceFiles[0]" target="_blank">{{ t('viewSource') }}</a>
-    </div>
+        </PluginTabsTab>
+      </PluginTabs>
+      <div class="name">
+        <a :href="meta?.sourceFiles[0]" target="_blank">{{ t('viewSource') }}</a>
+      </div>
+    </template>
   </section>
 </template>
 

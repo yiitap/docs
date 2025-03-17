@@ -1,0 +1,6 @@
+[class*="guide_introduction"] {
+    a img {
+        display: inline !important;
+        margin-right: 4px;
+    }
+}

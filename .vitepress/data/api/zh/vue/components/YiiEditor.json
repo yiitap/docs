@@ -1,0 +1,258 @@
+{
+  "name": "YiiEditor",
+  "description": "YiitapEditor 是一个功能齐全的基于块的 Vue 编辑器。",
+  "tags": {},
+  "exportName": "default",
+  "displayName": "YiiEditor",
+  "expose": [
+    {
+      "name": "editor",
+      "description": "编辑器实例。更多关于 <a href=\"https://tiptap.dev/docs/editor/api/editor\" target=\"_blank\">编辑器 API</a> 的信息。"
+    },
+    {
+      "name": "darkMode",
+      "description": "是否处于暗黑模式"
+    },
+    {
+      "name": "locale",
+      "description": "当前语言环境"
+    }
+  ],
+  "props": [
+    {
+      "name": "content",
+      "description": "初始内容。可以是 HTML 或 JSON 格式。",
+      "type": {
+        "name": "string|object"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "editable",
+      "description": "确定用户是否可以在编辑器中输入内容。",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "true"
+      }
+    },
+    {
+      "name": "locale",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'en'"
+      }
+    },
+    {
+      "name": "darkMode",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showMainMenu",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showBubbleMenu",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showFloatingMenu",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showSideMenu",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showSideNode",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showContent",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "true"
+      }
+    },
+    {
+      "name": "showGuide",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "scrollable",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "editorProps",
+      "type": {
+        "name": "object"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "{}"
+      }
+    },
+    {
+      "name": "extensions",
+      "type": {
+        "name": "Array as () => string[]"
+      },
+      "defaultValue": {
+        "func": true,
+        "value": "function () {\n  return []\n}"
+      }
+    },
+    {
+      "name": "mainMenu",
+      "type": {
+        "name": "array"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "[]"
+      }
+    },
+    {
+      "name": "tableMenu",
+      "type": {
+        "name": "array"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "[]"
+      }
+    },
+    {
+      "name": "bubbleMenu",
+      "type": {
+        "name": "array"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "[]"
+      }
+    },
+    {
+      "name": "floatingMenu",
+      "type": {
+        "name": "array"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "[]"
+      }
+    },
+    {
+      "name": "pageView",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'page'"
+      }
+    },
+    {
+      "name": "options",
+      "type": {
+        "name": "object"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "{}"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "transaction",
+      "type": {
+        "names": [
+          "{ editor: Editor, transaction: Object }"
+        ]
+      },
+      "description": "当内容发生事务操作时触发。"
+    },
+    {
+      "name": "update",
+      "type": {
+        "names": [
+          "{ json: Object, html: string }"
+        ]
+      },
+      "description": "当内容更新时触发。"
+    }
+  ],
+  "slots": [
+    {
+      "name": "toolbar-left",
+      "description": "主工具栏左侧区域"
+    },
+    {
+      "name": "toolbar-right",
+      "description": "主工具栏右侧区域"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/YiiEditor.vue"
+  ]
+}

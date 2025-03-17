@@ -1,0 +1,84 @@
+{
+  "exportName": "default",
+  "displayName": "OMetaInput",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "val",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "title",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'Link'"
+      }
+    },
+    {
+      "name": "type",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'link'"
+      }
+    },
+    {
+      "name": "icon",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'link'"
+      }
+    },
+    {
+      "name": "secondIcon",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "secondLabel",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "cancel"
+    },
+    {
+      "name": "confirm"
+    }
+  ],
+  "slots": [
+    {
+      "name": "header-right"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OMetaInput.vue"
+  ]
+}

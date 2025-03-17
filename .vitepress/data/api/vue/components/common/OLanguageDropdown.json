@@ -1,0 +1,26 @@
+{
+  "exportName": "default",
+  "displayName": "OLanguageDropdown",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "language",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'shell'"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "select"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OLanguageDropdown.vue"
+  ]
+}

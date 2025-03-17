@@ -1,0 +1,41 @@
+{
+  "exportName": "default",
+  "displayName": "OIcon",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "name",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "color",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "small",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/ui/OIcon.vue"
+  ]
+}

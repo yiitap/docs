@@ -1,0 +1,41 @@
+{
+  "exportName": "default",
+  "displayName": "AddNode",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "NodeViewProps['editor']"
+      }
+    },
+    {
+      "name": "node",
+      "type": {
+        "name": "NodeViewProps['node']"
+      }
+    },
+    {
+      "name": "getPos",
+      "type": {
+        "name": "NodeViewProps['getPos']"
+      }
+    },
+    {
+      "name": "updateAttributes",
+      "type": {
+        "name": "NodeViewProps['updateAttributes']"
+      }
+    },
+    {
+      "name": "deleteNode",
+      "type": {
+        "name": "NodeViewProps['deleteNode']"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/o-side-menu/AddNode.vue"
+  ]
+}

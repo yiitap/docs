@@ -1,0 +1,46 @@
+{
+  "exportName": "default",
+  "displayName": "OTextColorBoard",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "foreColor",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "backColor",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "activeColor",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "select"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/common/OTextColorBoard.vue"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "exportName": "default",
+  "displayName": "OSideMenu",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "Editor"
+      },
+      "required": true
+    },
+    {
+      "name": "menuClass",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "``"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/menus/OSideMenu.vue"
+  ]
+}

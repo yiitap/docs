@@ -1,0 +1,9 @@
+{
+  "exportName": "default",
+  "displayName": "AddNode",
+  "description": "",
+  "tags": {},
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/o-side-node/AddNode.vue"
+  ]
+}

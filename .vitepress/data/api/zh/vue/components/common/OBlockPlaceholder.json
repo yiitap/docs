@@ -1,0 +1,31 @@
+{
+  "exportName": "default",
+  "displayName": "OBlockPlaceholder",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "icon",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'image'"
+      }
+    },
+    {
+      "name": "placeholder",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/common/OBlockPlaceholder.vue"
+  ]
+}

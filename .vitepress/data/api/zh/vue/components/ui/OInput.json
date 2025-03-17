@@ -1,0 +1,65 @@
+{
+  "exportName": "default",
+  "displayName": "OInput",
+  "description": "",
+  "tags": {},
+  "expose": [
+    {
+      "name": "clear"
+    },
+    {
+      "name": "focus"
+    }
+  ],
+  "props": [
+    {
+      "name": "modelValue",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "clearable",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "type",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "blur"
+    },
+    {
+      "name": "update:modelValue"
+    }
+  ],
+  "slots": [
+    {
+      "name": "prefix"
+    },
+    {
+      "name": "suffix"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/ui/OInput.vue"
+  ]
+}

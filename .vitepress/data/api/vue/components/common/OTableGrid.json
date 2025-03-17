@@ -1,0 +1,14 @@
+{
+  "exportName": "default",
+  "displayName": "OTableGrid",
+  "description": "",
+  "tags": {},
+  "events": [
+    {
+      "name": "select"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OTableGrid.vue"
+  ]
+}

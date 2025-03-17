@@ -1,0 +1,45 @@
+{
+  "name": "ICon",
+  "description": "Use yiitap-icon iconfont.",
+  "tags": {},
+  "exportName": "default",
+  "displayName": "OIcon",
+  "props": [
+    {
+      "name": "name",
+      "description": "Icon name",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "color",
+      "description": "Icon color,  color name, or hex value",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "small",
+      "description": "Small",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/OIcon.vue"
+  ]
+}

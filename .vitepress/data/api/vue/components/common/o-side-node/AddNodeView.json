@@ -1,0 +1,14 @@
+{
+  "exportName": "default",
+  "displayName": "AddNodeView",
+  "description": "",
+  "tags": {},
+  "events": [
+    {
+      "name": "action"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/o-side-node/AddNodeView.vue"
+  ]
+}

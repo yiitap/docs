@@ -1,0 +1,36 @@
+{
+  "exportName": "default",
+  "displayName": "OList",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "clickable",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "hoverable",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "name": "default"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/ui/OList.vue"
+  ]
+}

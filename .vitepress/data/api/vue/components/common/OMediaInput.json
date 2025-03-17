@@ -1,0 +1,36 @@
+{
+  "exportName": "default",
+  "displayName": "OMediaInput",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "val",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "type",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "input"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OMediaInput.vue"
+  ]
+}

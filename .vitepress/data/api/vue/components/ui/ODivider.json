@@ -1,0 +1,21 @@
+{
+  "exportName": "default",
+  "displayName": "ODivider",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "vertical",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/ODivider.vue"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "exportName": "default",
+  "displayName": "OBlockMenu",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "NodeViewProps['editor']"
+      }
+    },
+    {
+      "name": "node",
+      "type": {
+        "name": "NodeViewProps['node']"
+      }
+    },
+    {
+      "name": "getPos",
+      "type": {
+        "name": "NodeViewProps['getPos']"
+      }
+    },
+    {
+      "name": "updateAttributes",
+      "type": {
+        "name": "NodeViewProps['updateAttributes']"
+      }
+    },
+    {
+      "name": "deleteNode",
+      "type": {
+        "name": "NodeViewProps['deleteNode']"
+      }
+    },
+    {
+      "name": "colorful",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showGroup",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "action"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/common/OBlockMenu.vue"
+  ]
+}

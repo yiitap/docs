@@ -1,0 +1,90 @@
+{
+  "exportName": "default",
+  "displayName": "OBlockPopover",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "modelValue",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "placement",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'bottom-center'"
+      }
+    },
+    {
+      "name": "showArrow",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "hideClickOutside",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "tippyClass",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "offset",
+      "type": {
+        "name": "[number, number]"
+      },
+      "defaultValue": {
+        "func": true,
+        "value": "function () {\n  return [0, 10] as [number, number]\n}"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "update:modelValue"
+    },
+    {
+      "name": "show"
+    },
+    {
+      "name": "hide"
+    }
+  ],
+  "slots": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "popover-content"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OBlockPopover.vue"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "exportName": "default",
+  "displayName": "OListItem",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "hoverable",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "name": "prefix"
+    },
+    {
+      "name": "default"
+    },
+    {
+      "name": "suffix"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/OListItem.vue"
+  ]
+}

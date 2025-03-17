@@ -1,0 +1,31 @@
+{
+  "exportName": "default",
+  "displayName": "OBlockToolbar",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "type",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'link'"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "action"
+    }
+  ],
+  "slots": [
+    {
+      "name": "default"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OBlockToolbar.vue"
+  ]
+}

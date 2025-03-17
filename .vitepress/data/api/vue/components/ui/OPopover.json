@@ -1,0 +1,119 @@
+{
+  "exportName": "default",
+  "displayName": "OPopover",
+  "description": "",
+  "tags": {},
+  "expose": [
+    {
+      "name": "setShow"
+    }
+  ],
+  "props": [
+    {
+      "name": "disable",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "arrow",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "offset",
+      "type": {
+        "name": "[number, number]"
+      },
+      "defaultValue": {
+        "func": true,
+        "value": "function () {\n  return [0, 10] as [number, number]\n}"
+      }
+    },
+    {
+      "name": "placement",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'bottom-start'"
+      }
+    },
+    {
+      "name": "trigger",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'mouseenter focus'"
+      }
+    },
+    {
+      "name": "tippyClass",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'tippy'"
+      }
+    },
+    {
+      "name": "event",
+      "type": {
+        "name": "object"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "{}"
+      }
+    },
+    {
+      "name": "delay",
+      "type": {
+        "name": "number"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "100"
+      }
+    },
+    {
+      "name": "duration",
+      "type": {
+        "name": "number"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "200"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "update:show"
+    }
+  ],
+  "slots": [
+    {
+      "name": "trigger"
+    },
+    {
+      "name": "default"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/OPopover.vue"
+  ]
+}

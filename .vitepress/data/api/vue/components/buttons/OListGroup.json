@@ -1,0 +1,18 @@
+{
+  "exportName": "default",
+  "displayName": "OListGroup",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "Editor"
+      },
+      "required": true
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/buttons/OListGroup.vue"
+  ]
+}

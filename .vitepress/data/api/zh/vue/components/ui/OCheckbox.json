@@ -1,0 +1,36 @@
+{
+  "exportName": "default",
+  "displayName": "OCheckbox",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "modelValue",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "label",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "update:modelValue"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/ui/OCheckbox.vue"
+  ]
+}

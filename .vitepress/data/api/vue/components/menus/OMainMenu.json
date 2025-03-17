@@ -1,0 +1,35 @@
+{
+  "exportName": "default",
+  "displayName": "OMainMenu",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "object"
+      }
+    },
+    {
+      "name": "menu",
+      "type": {
+        "name": "array"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "[]"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "name": "left"
+    },
+    {
+      "name": "right"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/menus/OMainMenu.vue"
+  ]
+}

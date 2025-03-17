@@ -1,0 +1,19 @@
+{
+  "exportName": "default",
+  "displayName": "ONodeView",
+  "description": "",
+  "tags": {},
+  "events": [
+    {
+      "name": "action"
+    }
+  ],
+  "slots": [
+    {
+      "name": "default"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/common/ONodeView.vue"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "exportName": "default",
+  "displayName": "OLinkOpenBtn",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "object"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/buttons/OLinkOpenBtn.vue"
+  ]
+}

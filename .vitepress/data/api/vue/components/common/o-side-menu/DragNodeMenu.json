@@ -1,0 +1,69 @@
+{
+  "exportName": "default",
+  "displayName": "DragNodeMenu",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "Editor"
+      },
+      "required": true
+    },
+    {
+      "name": "node",
+      "type": {
+        "name": "object"
+      }
+    },
+    {
+      "name": "pos",
+      "type": {
+        "name": "number"
+      }
+    },
+    {
+      "name": "deleteNode",
+      "type": {
+        "name": "func"
+      },
+      "required": true
+    },
+    {
+      "name": "updateAttributes",
+      "type": {
+        "name": "func"
+      },
+      "required": true
+    },
+    {
+      "name": "colorful",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "showGroup",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "action"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/o-side-menu/DragNodeMenu.vue"
+  ]
+}

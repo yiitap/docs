@@ -1,0 +1,22 @@
+{
+  "exportName": "default",
+  "displayName": "OCalloutColorDropdown",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "object"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "select"
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/common/OCalloutColorDropdown.vue"
+  ]
+}

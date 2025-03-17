@@ -1,0 +1,27 @@
+{
+  "exportName": "default",
+  "displayName": "OSimpleCommandBtn",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "name",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "editor",
+      "type": {
+        "name": "object"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/buttons/OSimpleCommandBtn.vue"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "exportName": "default",
+  "displayName": "OTooltip",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "placement",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'top'"
+      }
+    },
+    {
+      "name": "trigger",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "'mouseenter focus'"
+      }
+    },
+    {
+      "name": "delay",
+      "type": {
+        "name": "number"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "100"
+      }
+    },
+    {
+      "name": "duration",
+      "type": {
+        "name": "number"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "100"
+      }
+    },
+    {
+      "name": "offset",
+      "type": {
+        "name": "[number, number]"
+      },
+      "defaultValue": {
+        "func": true,
+        "value": "function () {\n  return [0, 10] as [number, number]\n}"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "name": "trigger"
+    },
+    {
+      "name": "default"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/OTooltip.vue"
+  ]
+}

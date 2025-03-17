@@ -1,0 +1,64 @@
+{
+  "name": "ODocToc",
+  "description": "TOC of Yiitap document",
+  "tags": {},
+  "exportName": "default",
+  "displayName": "ODocToc",
+  "expose": [
+    {
+      "name": "onScroll",
+      "description": "Find the closest heading when scrolls.",
+      "tags": [
+        {
+          "title": "param",
+          "type": {
+            "name": "mixed"
+          },
+          "name": "event"
+        }
+      ]
+    },
+    {
+      "name": "headings",
+      "description": "Heading list"
+    }
+  ],
+  "props": [
+    {
+      "name": "editor",
+      "description": "Editor instance",
+      "type": {
+        "name": "Editor"
+      }
+    },
+    {
+      "name": "maxLevel",
+      "description": "The max level of heading should be shown",
+      "values": [
+        "2",
+        "3"
+      ],
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "3"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "docScroll",
+      "type": {
+        "names": [
+          "Event"
+        ]
+      },
+      "description": "Emit when content scrolling"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/ODocToc.vue"
+  ]
+}

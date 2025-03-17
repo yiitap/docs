@@ -1,0 +1,33 @@
+{
+  "exportName": "default",
+  "displayName": "OEmojiSelect",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "items",
+      "type": {
+        "name": "Array as () => Indexable[]"
+      },
+      "required": true
+    },
+    {
+      "name": "enableSearch",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "select"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OEmojiSelect.vue"
+  ]
+}

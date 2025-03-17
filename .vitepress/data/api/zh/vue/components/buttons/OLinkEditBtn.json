@@ -1,0 +1,18 @@
+{
+  "exportName": "default",
+  "displayName": "OLinkEditBtn",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "Editor"
+      },
+      "required": true
+    }
+  ],
+  "sourceFiles": [
+    "/Users/micle/share/git/opensource/yiitap/yiitap/packages/vue/src/components/buttons/OLinkEditBtn.vue"
+  ]
+}

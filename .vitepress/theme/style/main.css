@@ -4,3 +4,10 @@
         margin-right: 4px;
     }
 }
+
+.o-table-wrapper-view {
+    table {
+        display: unset;
+        width: 100%;
+    }
+}

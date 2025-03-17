@@ -36,4 +36,4 @@ jobs:
       - name: Build
         run: |
           pnpm install
-          docs:build
+          pnpm docs:build

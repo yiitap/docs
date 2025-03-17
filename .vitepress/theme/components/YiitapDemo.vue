@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, onMounted, onUnmounted } from 'vue';
+import { computed, ref, provide, onMounted, onUnmounted } from 'vue';
 import { useData } from 'vitepress';
 import { YiiEditor, ODocToc, OMainMenu } from '@yiitap/vue';
 import '@yiitap/vue/dist/vue.css';
@@ -38,8 +38,10 @@ const props = defineProps({
 
 const { isDark } = useData();
 
+const localeAlt = ref('en')
 const yiiEditor = ref<InstanceType<typeof YiiEditor>>()
 const tocRef = ref<InstanceType<typeof ODocToc>>()
+provide('locale', localeAlt)
 
 const options = computed(() => {
   return {
@@ -101,6 +103,7 @@ const onScroll = (event: Event) => {
 };
 
 onMounted(() => {
+  localeAlt.value = props.locale
   window.addEventListener("scroll", onScroll);
 });
 

@@ -22,12 +22,15 @@ const t = (key :string) => {
 
 onMounted(async () => {
   const componentDocRoot = props.locale === 'en'
-      ? `../../data/api`
-      : `../../data/api/${props.locale}`;
+      ? `/data/api`
+      : `/data/api/${props.locale}`;
   try {
     const jsonPath = `${componentDocRoot}/${props.path}.json?raw`
-    const data = await import(jsonPath)
-    meta.value = JSON.parse(data.default)
+    const response = await fetch(jsonPath)
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`)
+    }
+    meta.value = await response.json()
   } catch (err) {
     console.error('Failed to load API data:', err)
   }

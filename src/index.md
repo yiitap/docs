@@ -6,7 +6,7 @@ hero:
   name: "Yiitap"
   tagline: An AI powered, Notion-style WYSIWYG rich-text block-based editor.
   image:
-    src: /logo-circle.svg
+    src: /logo.svg
     alt: Yiitap
   actions:
     - theme: brand

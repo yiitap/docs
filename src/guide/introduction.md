@@ -1,6 +1,6 @@
 # Introduction
 
-Yiitap is a Notion-style, WYSIWYG rich-text block-based editor.
+Yiitap is an AI powered, Notion-style WYSIWYG rich-text block-based editor, built on top of [tiptap](https://tiptap.dev).🔥
 
 <p align="left">
     <a href="https://github.com/yiitap/yiitap/actions/workflows/build.yml" target="_blank">

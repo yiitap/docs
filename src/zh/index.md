@@ -6,7 +6,7 @@ hero:
   name: "Yiitap"
   tagline: 一个 AI 赋能的 Notion 风格富文本块级编辑器
   image:
-    src: /logo-circle.svg
+    src: /logo-with-shadow.png
     alt: Yiitap
   actions:
     - theme: brand

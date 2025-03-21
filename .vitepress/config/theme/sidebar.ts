@@ -91,6 +91,7 @@ export function sidebarApi(locale :string) {
         { text: 'Color Highlighter', link: extension('color-highlighter') },
         { text: 'Image', link: extension('image') },
         { text: 'Placeholder', link: extension('placeholder') },
+        { text: 'Selection Decoration', link: extension('selection-decoration') },
         { text: 'Table', link: extension('table') },
         { text: 'Trailing Node', link: extension('trailing-node') },
         { text: 'Unique ID', link: extension('unique-id') },

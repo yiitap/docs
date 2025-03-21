@@ -11,3 +11,16 @@
         width: 100%;
     }
 }
+
+.global-toast-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.o-ai-settings-popover {
+    .popover-content {
+        min-width: 480px;
+    }
+}

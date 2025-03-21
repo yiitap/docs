@@ -6,14 +6,14 @@ hero:
   name: "Yiitap"
   tagline: An AI powered, Notion-style WYSIWYG rich-text block-based editor.
   image:
-    src: /logo.svg
+    src: /logo-with-shadow.png
     alt: Yiitap
   actions:
     - theme: brand
       text: Get started
       link: /guide/getting-started
     - theme: alt
-      text: Preview
+      text: Demo
       link: /demo/vue
 
 features:

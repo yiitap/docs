@@ -31,6 +31,17 @@
       }
     },
     {
+      "name": "title",
+      "description": "Set first block as title.",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
       "name": "editable",
       "description": "Determines if users can write into the editor.",
       "type": {
@@ -39,6 +50,17 @@
       "defaultValue": {
         "func": false,
         "value": "true"
+      }
+    },
+    {
+      "name": "autofocus",
+      "description": "Force the cursor to jump in the editor on initialization.",
+      "type": {
+        "name": "FocusPosition"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
       }
     },
     {
@@ -187,6 +209,16 @@
         "page",
         "full"
       ]
+    },
+    {
+      "name": "aiOption",
+      "type": {
+        "name": "AiOption"
+      },
+      "defaultValue": {
+        "func": true,
+        "value": "() => {}"
+      }
     }
   ],
   "events": [
@@ -194,7 +226,7 @@
       "name": "transaction",
       "type": {
         "names": [
-          "{ editor: Editor, transaction: Object }"
+          "{ editor: Editor; transaction: Object }"
         ]
       },
       "description": "Emit when content transaction"
@@ -203,7 +235,7 @@
       "name": "update",
       "type": {
         "names": [
-          "{ json: Object, html: string }"
+          "{ json: Object; html: string }"
         ]
       },
       "description": "Emit when content updates"

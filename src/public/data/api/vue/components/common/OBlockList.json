@@ -1,0 +1,30 @@
+{
+  "exportName": "default",
+  "displayName": "OBlockList",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "items",
+      "type": {
+        "name": "Array as () => BlockOption[]"
+      },
+      "required": true
+    },
+    {
+      "name": "useKeyboard",
+      "type": {
+        "name": "boolean"
+      },
+      "required": false
+    }
+  ],
+  "events": [
+    {
+      "name": "select"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OBlockList.vue"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "exportName": "default",
+  "displayName": "OAiMenu",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "Editor"
+      },
+      "required": true
+    },
+    {
+      "name": "menuClass",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "``"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "confirm"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/menus/OAiMenu.vue"
+  ]
+}

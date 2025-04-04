@@ -41,6 +41,15 @@
     },
     {
       "name": "placement",
+      "description": "Placement",
+      "tags": {
+        "see": [
+          {
+            "description": "https://atomiks.github.io/tippyjs/#placements",
+            "title": "see"
+          }
+        ]
+      },
       "type": {
         "name": "string"
       },
@@ -67,6 +76,16 @@
       "defaultValue": {
         "func": false,
         "value": "'tippy'"
+      }
+    },
+    {
+      "name": "contentClass",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
       }
     },
     {

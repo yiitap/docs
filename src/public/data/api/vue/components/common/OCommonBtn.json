@@ -65,6 +65,16 @@
       }
     },
     {
+      "name": "loading",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
       "name": "contentClass",
       "type": {
         "name": "string|object"

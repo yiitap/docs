@@ -55,6 +55,16 @@
       }
     },
     {
+      "name": "contentClass",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
       "name": "offset",
       "type": {
         "name": "[number, number]"

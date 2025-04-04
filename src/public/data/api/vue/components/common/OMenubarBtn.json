@@ -90,6 +90,11 @@
       "name": "click"
     }
   ],
+  "slots": [
+    {
+      "name": "default"
+    }
+  ],
   "sourceFiles": [
     "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/common/OMenubarBtn.vue"
   ]

@@ -1,0 +1,27 @@
+{
+  "exportName": "default",
+  "displayName": "OAiBtn",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "name",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
+      "name": "editor",
+      "type": {
+        "name": "object"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/buttons/OAiBtn.vue"
+  ]
+}

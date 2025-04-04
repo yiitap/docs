@@ -25,6 +25,16 @@
       }
     },
     {
+      "name": "label",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    },
+    {
       "name": "type",
       "type": {
         "name": "string"
@@ -32,6 +42,16 @@
       "defaultValue": {
         "func": false,
         "value": "''"
+      }
+    },
+    {
+      "name": "loading",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
       }
     }
   ],

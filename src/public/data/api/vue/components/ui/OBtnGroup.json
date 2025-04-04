@@ -1,19 +1,11 @@
 {
   "exportName": "default",
-  "displayName": "OInput",
+  "displayName": "OBtnGroup",
   "description": "",
   "tags": {},
-  "expose": [
-    {
-      "name": "clear"
-    },
-    {
-      "name": "focus"
-    }
-  ],
   "props": [
     {
-      "name": "modelValue",
+      "name": "icon",
       "type": {
         "name": "string"
       },
@@ -23,9 +15,9 @@
       }
     },
     {
-      "name": "placeholder",
+      "name": "iconClass",
       "type": {
-        "name": "string"
+        "name": "string|object"
       },
       "defaultValue": {
         "func": false,
@@ -33,13 +25,13 @@
       }
     },
     {
-      "name": "clearable",
+      "name": "label",
       "type": {
-        "name": "boolean"
+        "name": "string"
       },
       "defaultValue": {
         "func": false,
-        "value": "false"
+        "value": "''"
       }
     },
     {
@@ -55,24 +47,15 @@
   ],
   "events": [
     {
-      "name": "blur"
-    },
-    {
-      "name": "focus"
-    },
-    {
-      "name": "update:modelValue"
+      "name": "click"
     }
   ],
   "slots": [
     {
-      "name": "prefix"
-    },
-    {
-      "name": "suffix"
+      "name": "default"
     }
   ],
   "sourceFiles": [
-    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/OInput.vue"
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/OBtnGroup.vue"
   ]
 }

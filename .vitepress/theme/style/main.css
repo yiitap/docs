@@ -1,3 +1,8 @@
+body {
+    font-size: 16px !important;
+    font-family: var(--vp-font-family-base) !important;
+}
+
 [class*="guide_introduction"] {
     a img {
         display: inline !important;

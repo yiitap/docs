@@ -12,6 +12,7 @@ export function sidebarGuide(locale :string) {
         { text: t('introduction'), link: 'introduction' },
         { text: t('gettingStarted'), link: 'getting-started' },
         { text: t('styles'), link: 'styles' },
+        { text: t('contributing'), link: 'contributing' },
       ]
     },
     // {

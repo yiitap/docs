@@ -128,14 +128,16 @@ const options = computed(() => {
       'heading',
       'font-family',
       'text-color-dropdown',
-      'fore-color',
-      'back-color',
+      'color',
+      'background-color',
+      'highlight',
       'clearFormat',
       'separator',
       'align-dropdown',
       'separator',
       'horizontalRule',
       'blockquote',
+      'details',
       'list-dropdown',
       'codeBlock',
       'link',
@@ -154,6 +156,7 @@ const options = computed(() => {
       'OCodeBlock',
       'OColon',
       'OColorHighlighter',
+      'ODetails',
       'OHeading',
       'OImage',
       'OParagraph',
@@ -161,17 +164,9 @@ const options = computed(() => {
       'OSlash',
       'OSlashZh',
       'OLink',
-      'OTrailingNode',
       'OVideo',
     ],
   }
-})
-
-const aiOptions = computed(() => {
-  return [
-    { label: 'OpenAI', value: 'openai' },
-    { label: 'DeepSeek', value: 'deepseek' },
-  ]
 })
 
 function init() {

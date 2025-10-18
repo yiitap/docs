@@ -114,7 +114,10 @@ const options = computed(() => {
     showMainMenu: false,
     showBubbleMenu: true,
     showFloatingMenu: true,
-    showSideMenu: true,
+    sideMenu: {
+      show: true,
+      add: 'menu',
+    },
     // showSideNode: true,
     pageView: 'page',
     mainMenu: [
@@ -144,6 +147,7 @@ const options = computed(() => {
       'aiBlock',
     ],
     extensions: [
+      'Emoji',
       'OAiBlock',
       'OBlockquote',
       'OCallout',
@@ -153,6 +157,7 @@ const options = computed(() => {
       'OHeading',
       'OImage',
       'OParagraph',
+      'OShortcut',
       'OSlash',
       'OSlashZh',
       'OLink',

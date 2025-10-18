@@ -116,7 +116,7 @@ const options = computed(() => {
     showFloatingMenu: true,
     sideMenu: {
       show: true,
-      add: 'menu',
+      add: 'empty',
     },
     // showSideNode: true,
     pageView: 'page',

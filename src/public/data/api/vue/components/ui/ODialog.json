@@ -1,0 +1,48 @@
+{
+  "name": "ODialog",
+  "exportName": "default",
+  "displayName": "ODialog",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "show",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
+      "name": "title",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "''"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "update:show"
+    }
+  ],
+  "slots": [
+    {
+      "name": "title"
+    },
+    {
+      "name": "default"
+    },
+    {
+      "name": "footer"
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/ui/ODialog.vue"
+  ]
+}

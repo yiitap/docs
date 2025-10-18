@@ -20,6 +20,16 @@
         "func": false,
         "value": "``"
       }
+    },
+    {
+      "name": "add",
+      "type": {
+        "name": "string"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "`menu`"
+      }
     }
   ],
   "sourceFiles": [

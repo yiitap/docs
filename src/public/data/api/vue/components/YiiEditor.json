@@ -119,14 +119,14 @@
       }
     },
     {
-      "name": "showSideMenu",
-      "description": "Show side menu or not.",
+      "name": "sideMenu",
+      "description": "Side menu config",
       "type": {
-        "name": "boolean"
+        "name": "SideMenuConfig"
       },
       "defaultValue": {
-        "func": false,
-        "value": "false"
+        "func": true,
+        "value": "(): SideMenuConfig => ({\n  show: true,\n  add: 'menu',\n})"
       }
     },
     {

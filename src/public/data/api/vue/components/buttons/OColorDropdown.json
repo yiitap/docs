@@ -1,0 +1,17 @@
+{
+  "exportName": "default",
+  "displayName": "OColorDropdown",
+  "description": "",
+  "tags": {},
+  "props": [
+    {
+      "name": "editor",
+      "type": {
+        "name": "object"
+      }
+    }
+  ],
+  "sourceFiles": [
+    "https://github.com/yiitap/yiitap/blob/main/packages/vue/src/components/buttons/OColorDropdown.vue"
+  ]
+}

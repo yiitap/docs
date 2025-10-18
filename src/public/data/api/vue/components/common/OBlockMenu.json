@@ -5,36 +5,6 @@
   "tags": {},
   "props": [
     {
-      "name": "editor",
-      "type": {
-        "name": "NodeViewProps['editor']"
-      }
-    },
-    {
-      "name": "node",
-      "type": {
-        "name": "NodeViewProps['node']"
-      }
-    },
-    {
-      "name": "getPos",
-      "type": {
-        "name": "NodeViewProps['getPos']"
-      }
-    },
-    {
-      "name": "updateAttributes",
-      "type": {
-        "name": "NodeViewProps['updateAttributes']"
-      }
-    },
-    {
-      "name": "deleteNode",
-      "type": {
-        "name": "NodeViewProps['deleteNode']"
-      }
-    },
-    {
       "name": "colorful",
       "type": {
         "name": "boolean"

@@ -25,6 +25,16 @@
       }
     },
     {
+      "name": "defaultDisabled",
+      "type": {
+        "name": "boolean"
+      },
+      "defaultValue": {
+        "func": false,
+        "value": "false"
+      }
+    },
+    {
       "name": "activeColor",
       "type": {
         "name": "string"

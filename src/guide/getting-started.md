@@ -52,7 +52,10 @@ const options = computed(() => {
     content: '',
     showMainMenu: false,
     showBubbleMenu: true,
-    showSideMenu: true,
+    sideMenu: {
+      show: true,
+      add: 'menu',
+    },
     pageView: 'page',
   }
 })

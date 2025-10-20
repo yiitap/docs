@@ -18,8 +18,8 @@
     "url": "https://github.com/yiitap/docs/issues"
   },
   "dependencies": {
-    "@yiitap/vue": "^0.6.0",
-    "@yiitap/util-emoji": "^0.6.0",
+    "@yiitap/vue": "^0.7.0",
+    "@yiitap/util-emoji": "^0.7.0",
     "markdown-it": "^14.1.0",
     "openai": "^4.88.0",
     "vue": "^3.5.13"

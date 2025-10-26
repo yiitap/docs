@@ -86,6 +86,7 @@ import {
 } from '@yiitap/vue';
 import '@yiitap/vue/dist/vue.css';
 import { BasicFeaturesArticle, BasicFeaturesArticleZh } from '../../data/demo/article';
+import 'katex/dist/katex.min.css'
 
 const props = defineProps({
   locale: {
@@ -150,20 +151,22 @@ const options = computed(() => {
     ],
     extensions: [
       'Emoji',
+      'InlineMath',
+      'Markdown',
       'OAiBlock',
+      'OBlockMath',
       'OBlockquote',
       'OCallout',
       'OCodeBlock',
-      'OColon',
       'OColorHighlighter',
       'ODetails',
       'OHeading',
       'OImage',
+      'OLink',
       'OParagraph',
       'OShortcut',
       'OSlash',
       'OSlashZh',
-      'OLink',
       'OVideo',
     ],
   }

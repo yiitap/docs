@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import pkg from '../../../package.json'
 defineProps<{
   package: string
 }>()
@@ -6,20 +7,38 @@ defineProps<{
 
 <template>
   <a
-      :href="`https://www.npmjs.com/package/${package}`"
+      :href="`https://www.npmjs.com/package/${package}/v/${pkg.version}`"
       target="_blank"
       rel="noopener noreferrer"
   >
-    <img
-        :src="`https://img.shields.io/npm/v/${package}.svg`"
-        alt="NPM version"
-    />
+    <div class="name">yiitap-docs</div>
+    <div class="version">v{{pkg.version}}</div>
   </a>
 </template>
 
 <style scoped>
 a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #ffffff;
   height: 20px;
+  line-height: 20px;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  .name {
+    background: #3E454E;
+    padding: 0 6px;
+    border-radius: 4px 0 0 4px;
+  }
+  .version {
+    background: var(--vp-c-brand);
+    padding: 0 6px;
+    border-radius: 0 4px 4px 0;
+  }
 }
 </style>

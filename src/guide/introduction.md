@@ -2,6 +2,8 @@
 
 Yiitap is an AI powered, Notion-style WYSIWYG rich-text block-based editor, built on top of [tiptap](https://tiptap.dev).🔥
 
+<version-badge package="@yiitap/vue"></version-badge>
+
 <p align="left">
     <a href="https://github.com/yiitap/yiitap/actions/workflows/build.yml" target="_blank">
         <img src="https://github.com/yiitap/yiitap/actions/workflows/build.yml/badge.svg" alt="Build Status" />

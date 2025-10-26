@@ -29,3 +29,24 @@ body {
         min-width: 480px;
     }
 }
+
+.o-code-block-view {
+    background: transparent !important;
+    margin: unset !important;
+    &.splitHorizontal {
+        position: fixed !important;
+    }
+
+    pre {
+        padding: 1rem!important;
+        background: var(--yii-pre-bg-color) !important;
+    }
+}
+
+.o-details-view {
+    .details {
+        summary {
+            margin: unset;
+        }
+    }
+}
